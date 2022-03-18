@@ -36,3 +36,17 @@
 .categoryActive {
   @apply underline underline-offset-8 decoration-4  decoration-yellow-400;
 }
+
+.swiper-button-prev {
+  color: white !important;
+}
+
+.swiper-button-next {
+  color: white !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: white !important;
+  width: 16px !important;
+  height: 16px !important;
+}
