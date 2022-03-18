@@ -1,13 +1,38 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.pad-nav {
+  /* padding: 1rem calc((100vw - 1300px) / 2); */
+  padding: 1rem 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.link {
+  @apply text-xl py-4 block hover:bg-slate-700 md:hover:bg-transparent md:hover:text-blue-800 hover:text-white w-full text-center md:py-0  after:block after:w-0 after:h-[2px] after:bg-indigo-900 after:transition-all;
+}
+
+.activeLink {
+  @apply md:after:w-full md:transition-all;
+}
+
+.fade-anim img {
+  animation: fadeAnim 0.5s ease-out;
+}
+@keyframes fadeAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.anim {
+  transition: 1s;
+}
+
+.categoryActive {
+  @apply underline underline-offset-8 decoration-4  decoration-yellow-400;
 }
