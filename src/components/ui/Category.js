@@ -10,7 +10,7 @@ const Category = () => {
       <div className="grid grid-cols-1 items-center sm:grid-cols-2 lg:grid-cols-3 gap-3">
         {gallery.map((category) => {
           return (
-            <Link key={category.id} className="h-full" to="/products">
+            <Link key={category.id} className="h-[300px]" to="/products">
               <article className=" overflow-hidden h-full relative cursor-pointer">
                 <h3 className="absolute text-white z-20 top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-xl tracking-[10px] uppercase font-bold">
                   {category.title}
