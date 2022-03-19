@@ -1,11 +1,10 @@
 import React from "react";
 import { products } from "../../data";
 import Product from "./Product";
-import { productActions, productsReducer } from "../../store/products-slice";
-import { useDispatch, useSelector } from "react-redux";
+import { productActions } from "../../store/products-slice";
+import { useDispatch } from "react-redux";
 
 const AllProducts = () => {
-  const items = useSelector((state) => state.cart.itemDetail);
   const dispatch = useDispatch();
   const viewProductHandler = (product) => {
     dispatch(productActions.viewProduct(product));

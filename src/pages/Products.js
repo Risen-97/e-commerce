@@ -1,6 +1,5 @@
 import React from "react";
-import { products, gallery } from "../data";
-import { Route, Switch } from "react-router-dom";
+import { gallery } from "../data";
 import FilterProducts from "../components/ui/FilterProducts";
 import AllProducts from "../components/ui/AllProducts";
 const Products = () => {
@@ -13,9 +12,3 @@ const Products = () => {
 };
 
 export default Products;
-
-{
-  /* <Switch>
-  <Route path={`/products:/jewllery`}></Route>
-</Switch>; */
-}

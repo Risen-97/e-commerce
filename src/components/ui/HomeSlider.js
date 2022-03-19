@@ -21,7 +21,7 @@ const HomeSlider = () => {
         return (
           <SwiperSlide key={cover.id} className="w-full  relative">
             <div className="w-full h-full z-10 bg-black absolute opacity-50"></div>
-            <img src={cover.image} className="w-full h-full" />
+            <img src={cover.image} className="w-full h-full" alt="" />
           </SwiperSlide>
         );
       })}
