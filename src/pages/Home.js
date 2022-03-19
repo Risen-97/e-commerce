@@ -4,7 +4,7 @@ import HomeSlider from "../components/ui/HomeSlider";
 
 const Home = () => {
   return (
-    <section className="">
+    <section className="min-h-full">
       <HomeSlider />
       <Category />
     </section>
