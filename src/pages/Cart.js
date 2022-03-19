@@ -21,7 +21,6 @@ const Cart = () => {
   useEffect(() => {
     const sumItems = items.reduce((a, b) => a + b.totalPrice, 0);
     setSubtotal(+sumItems.toFixed(2));
-    console.log(items);
   }, [items]);
   return (
     <section className="min-h-screen py-20 text-slate-700 p-1">

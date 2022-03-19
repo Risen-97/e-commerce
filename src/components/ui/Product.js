@@ -1,5 +1,4 @@
-import { Route, Link, useParams } from "react-router-dom";
-import { products } from "../../data";
+import { Link } from "react-router-dom";
 
 const Product = (props) => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { productActions } from "../store/products-slice";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import ProductDetails from "../components/ui/ProductDetails";
 import { products } from "../data";
 
@@ -9,7 +9,6 @@ const ProductPage = () => {
   const { productId } = useParams();
   const thisProduct = products.find((product) => product.id == productId);
 
-  // const item = useSelector((state) => state.cart.itemDetail);
   const dispatch = useDispatch();
   const addProductHandler = () => {
     dispatch(
